@@ -1,0 +1,27 @@
+.slides{
+    background: #000;
+    height: 90vh;
+    .slider{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+       .slider__item{
+           background: red;
+              
+           img{
+            width: 100%;
+            height: 90vh;
+               object-fit: cover;
+           }
+       }
+       .sliderNavBtn{
+           .slick-prev , .slick-next{
+            background: #000;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            z-index: 20;
+           }
+       }
+    }
+}

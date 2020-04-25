@@ -128,3 +128,72 @@ footer .social .lastText p {
 footer .social .lastText p span {
   color: #000;
 }
+
+.slides {
+  background: #000;
+  height: 90vh;
+}
+
+.slides .slider {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.slides .slider .slider__item {
+  background: red;
+}
+
+.slides .slider .slider__item img {
+  width: 100%;
+  height: 90vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.slides .slider .sliderNavBtn .slick-prev, .slides .slider .sliderNavBtn .slick-next {
+  background: #000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  z-index: 20;
+}
+
+.wrap {
+  padding: 40px 100px 40px 100px;
+}
+
+.form {
+  margin-top: 40px;
+  align-items: center;
+  text-align: center;
+}
+
+.form .form__inputs {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.form .form__inputs input {
+  width: 270px;
+  padding: 5px;
+}
+
+.form #comment {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+}
+
+.form #submitBtm {
+  width: 250px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+}
