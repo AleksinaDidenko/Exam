@@ -206,32 +206,39 @@ footer .social .lastText p span {
   margin-top: 10px;
 }
 
-.modal__form {
+.formSection .active {
   display: block;
+}
+
+.formSection .no_active {
+  display: none;
+}
+
+.formSection .modal__form {
   align-items: center;
   justify-content: center;
   text-align: center;
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
-  top: 100px;
+  top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   z-index: 2000;
 }
 
-.modal__form .modal__formItems {
+.formSection .modal__form .modal__formItems {
   background: rgba(255, 255, 255, 0.548);
   margin: 50vh 250px;
 }
 
-.modal__form .modal__formItems .modal__formItem {
+.formSection .modal__form .modal__formItems .modal__formItem {
   padding: 15px;
   color: #000;
   font-weight: 500;
 }
 
-.modal__form .modal__form {
+.formSection .modal__form .modal__form {
   display: block;
   margin: 0;
 }

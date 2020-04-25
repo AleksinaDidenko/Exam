@@ -1,67 +1,67 @@
-.formSection{
-    background: rgb(220, 220, 220);
-    height: 80vh;
-    padding:  40px 250px 40px 250px;
-.form{
+.formSection {
+  background: rgb(220, 220, 220);
+  height: 80vh;
+  padding: 40px 250px 40px 250px;
+  .form {
     margin-top: 40px;
     align-items: center;
     text-align: center;
     position: relative;
-    .form__inputs{
-        margin-top: 30px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 25px;
-        input{
-            width: 270px;
-            padding: 5px;
-            
-        }
-    }
-    #comment{
-        width: 100%;
-        height: 100px;
+    .form__inputs {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+      input {
+        width: 270px;
         padding: 5px;
+      }
     }
-    #submitBtm{
-        width: 250px;
-        background: #000;
-        color: #fff;
-        text-align: center;
-        padding: 5px;
-        margin-top: 10px;
+    #comment {
+      width: 100%;
+      height: 100px;
+      padding: 5px;
     }
+    #submitBtm {
+      width: 250px;
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 5px;
+      margin-top: 10px;
+    }
+  }
+  .active {
+    display: block;
+  }
 
-}
+  .no_active {
+    display: none;
+  }
 
-}
-
-
-.modal__form{
-    display:block;
+  .modal__form {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: rgba(0, 0, 0, 0.600);
+    background: rgba(0, 0, 0, 0.6);
     position: absolute;
-    top: 100px;
+    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: 2000;
-    .modal__formItems{
-        background: rgba(255, 255, 255, 0.548);
-        margin: 50vh 250px;
-        .modal__formItem{
-            padding: 15px;
-            color: #000;
-            font-weight: 500;
-     }
+    .modal__formItems {
+      background: rgba(255, 255, 255, 0.548);
+      margin: 50vh 250px;
+      .modal__formItem {
+        padding: 15px;
+        color: #000;
+        font-weight: 500;
+      }
     }
-    .modal__form{
-        display: block;
-        margin: 0;
+    .modal__form {
+      display: block;
+      margin: 0;
     }
-    
-   
+  }
 }
