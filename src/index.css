@@ -7,6 +7,7 @@
 }
 
 body {
+  position: relative;
   color: #585858;
   font-family: "Roboto", sans-serif;
 }
@@ -163,13 +164,20 @@ footer .social .lastText p span {
   padding: 40px 100px 40px 100px;
 }
 
-.form {
+.formSection {
+  background: gainsboro;
+  height: 80vh;
+  padding: 40px 250px 40px 250px;
+}
+
+.formSection .form {
   margin-top: 40px;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
-.form .form__inputs {
+.formSection .form .form__inputs {
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,22 +186,56 @@ footer .social .lastText p span {
   margin-bottom: 25px;
 }
 
-.form .form__inputs input {
+.formSection .form .form__inputs input {
   width: 270px;
   padding: 5px;
 }
 
-.form #comment {
+.formSection .form #comment {
   width: 100%;
   height: 100px;
   padding: 5px;
 }
 
-.form #submitBtm {
+.formSection .form #submitBtm {
   width: 250px;
   background: #000;
   color: #fff;
   text-align: center;
   padding: 5px;
   margin-top: 10px;
+}
+
+.modal__form {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2000;
+}
+
+.modal__form .modal__formItems {
+  background: rgba(255, 255, 255, 0.548);
+  margin: 50vh 250px;
+}
+
+.modal__form .modal__formItems .modal__formItem {
+  padding: 15px;
+  color: #000;
+  font-weight: 500;
+}
+
+.modal__form .modal__form {
+  display: block;
+  margin: 0;
+}
+
+.content {
+  background: gainsboro;
 }

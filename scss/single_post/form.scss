@@ -1,7 +1,12 @@
+.formSection{
+    background: rgb(220, 220, 220);
+    height: 80vh;
+    padding:  40px 250px 40px 250px;
 .form{
     margin-top: 40px;
     align-items: center;
     text-align: center;
+    position: relative;
     .form__inputs{
         margin-top: 30px;
         display: flex;
@@ -27,4 +32,36 @@
         margin-top: 10px;
     }
 
+}
+
+}
+
+
+.modal__form{
+    display:block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.600);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2000;
+    .modal__formItems{
+        background: rgba(255, 255, 255, 0.548);
+        margin: 50vh 250px;
+        .modal__formItem{
+            padding: 15px;
+            color: #000;
+            font-weight: 500;
+     }
+    }
+    .modal__form{
+        display: block;
+        margin: 0;
+    }
+    
+   
 }

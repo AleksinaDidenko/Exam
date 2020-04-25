@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./src/index.css" />
   </head>
   <body>
+
     <header>
       <nav class="header__nav">
         <div class="logo">
@@ -38,55 +39,67 @@
         </ul>
       </nav>
     </header>
+
+    
+    
     <section class="title__section"></section>
 
     <section class="content">
+
+      <div class="modal__form" id="modal">
+        <div class="modal__formItems">
+         <p class="modal__formItem" id="forEmail"></p>
+          <p class="modal__formItem" id="forName">12345</p>
+          <p class="modal__formItem" id="forWebsite">12345</p>
+          <p class="modal__formItem" id="forComment">12345</p>
+      </div>
+        <form action="" id="modal__form">
+          <div class="modalinput"> 
+            <input type="submit" class="modalBtn" id="yes" value="Yes"/>
+            <input type="submit" class="modalBtn" id="no" value="No"/>
+          </div>
+        </form>
+      </div>
+    
       <div class="container">
         <div class="wrap">
-            <div class="conten__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-              necessitatibus minima veritatis consectetur? Repudiandae quibusdam
-              inventore nesciunt? Nostrum quas itaque, omnis expedita eveniet
-              blanditiis minus reiciendis. Mollitia quibusdam nesciunt, nemo ratione
-              amet dolor dignissimos molestiae adipisci quis. Sed cum veritatis
-              debitis dolore repudiandae? Consequuntur, possimus doloribus
-              asperiores deserunt optio praesentium consequatur corrupti saepe
-              delectus modi, sit autem odio fugit, odit tempore? Odio ut dolorum nam
-              blanditiis amet placeat minima quis odit itaque incidunt, nihil magnam
-              quibusdam vero perferendis vitae esse iusto nisi, at illo veniam
-              quisquam? Molestias in eaque nostrum modi ab nisi ad temporibus nemo
-              nulla. Voluptatum voluptates dolores cumque praesentium ipsam
-              repellendus inventore fugit accusamus quisquam, quasi temporibus eaque
-              nihil excepturi assumenda eum nesciunt non minima aliquam optio modi
-              ipsum sunt. Ab reprehenderit necessitatibus sit. Velit, perferendis
-              repellat aut reprehenderit doloremque, ipsa quae tenetur doloribus a
-              in accusamus enim unde rem nemo quisquam similique assumenda
-              architecto voluptate eius quas esse nostrum consectetur corrupti!
-             
-            </div>
-            <div class="form">
-              <h3>LEAVE A COMENT</h3>
-              <form action="#" id="commentForm">
-                <div class="form__inputs">
-                  <input type="text" placeholder="Name"  id="name"/>
-                  <input type="text" placeholder="Email" id="email"/>
-                  <input type="text" placeholder="Web-site"  id="website"/>
-                </div>
-                <textarea name="" id="comment" placeholder="Message"></textarea>
-                <input type="submit" id="submitBtm" value="Send message"/>
-              </form>
-              <div class="modal__form"  id="">
-                <p class="modal__formItem"  id="forEmail"></p>
-                <p class="modal__formItem"  id="forName"></p>
-                <p class="modal__formItem"  id="forWebsite"></p>
-                <p class="modal__formItem"  id="forComment"></p>
-                <div class="modalBtns">
-                  <button  class="modalBtn" id="yes">Yes</button>
-                  <button  class="modalBtn" id="no">No</button>
-                </div>
-              </div>
-            </div>
-        </div>
+          <div class="conten__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+            necessitatibus minima veritatis consectetur? Repudiandae quibusdam
+            inventore nesciunt? Nostrum quas itaque, omnis expedita eveniet
+            blanditiis minus reiciendis. Mollitia quibusdam nesciunt, nemo
+            ratione amet dolor dignissimos molestiae adipisci quis. Sed cum
+            veritatis debitis dolore repudiandae? Consequuntur, possimus
+            doloribus asperiores deserunt optio praesentium consequatur corrupti
+            saepe delectus modi, sit autem odio fugit, odit tempore? Odio ut
+            dolorum nam blanditiis amet placeat minima quis odit itaque
+            incidunt, nihil magnam quibusdam vero perferendis vitae esse iusto
+            nisi, at illo veniam quisquam? Molestias in eaque nostrum modi ab
+            nisi ad temporibus nemo nulla. Voluptatum voluptates dolores cumque
+            praesentium ipsam repellendus inventore fugit accusamus quisquam,
+            quasi temporibus eaque nihil excepturi assumenda eum nesciunt non
+            minima aliquam optio modi ipsum sunt. Ab reprehenderit
+            necessitatibus sit. Velit, perferendis repellat aut reprehenderit
+            doloremque, ipsa quae tenetur doloribus a in accusamus enim unde rem
+            nemo quisquam similique assumenda architecto voluptate eius quas
+            esse nostrum consectetur corrupti!
+          </div>
+        <div>
+      </div>
+    </section>
+    <section class="formSection">
+        <div class="form">
+        <h3>LEAVE A COMENT</h3>
+        <form action="#" id="commentForm">
+          <div class="form__inputs">
+            <input type="text" placeholder="Name" id="name" />
+            <input type="text" placeholder="Email" id="email" />
+            <input type="text" placeholder="Web-site" id="website" />
+          </div>
+          <textarea name="" id="comment" placeholder="Message"></textarea>
+          <input type="submit" id="submitBtm" value="Send message" />
+        </form>
+       
       </div>
     </section>
 
