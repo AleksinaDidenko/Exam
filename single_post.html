@@ -76,9 +76,18 @@
         <h3>LEAVE A COMENT</h3>
         <form action="#" id="commentForm">
           <div class="form__inputs">
-            <input type="text" placeholder="Name" id="name" />
-            <input type="text" placeholder="Email" id="email" />
-            <input type="text" placeholder="Web-site" id="website" />
+            <div class="form__input" id="name__input">
+              <input type="text" placeholder="Name" id="name" />
+              <p class="help">Enter more then 3 symbols</p>
+            </div>
+            <div class="form__input" id="email__input">
+              <input type="text" placeholder="Email" id="email" />
+              <p class="help">Uncorrect e-mail!</p>
+            </div>
+            <div class="form__input" id="website__input">
+              <input type="text" placeholder="Web-site" id="website" />
+              <p class="help">Uncorrect link to the website!</p>
+            </div>
           </div>
           <textarea name="" id="comment" placeholder="Message"></textarea>
           <input type="submit" id="submitBtm" value="Send message" />
@@ -89,10 +98,10 @@
       
       <div class="modal__form no_active" id="modal">
         <div class="modal__formItems">
-         <p class="modal__formItem" id="forEmail"></p>
-          <p class="modal__formItem" id="forName">12345</p>
-          <p class="modal__formItem" id="forWebsite">12345</p>
-          <p class="modal__formItem" id="forComment">12345</p>
+          <p class="modal__formItem" id="forName"></p>
+          <p class="modal__formItem" id="forEmail"></p>
+          <p class="modal__formItem" id="forWebsite"></p>
+          <p class="modal__formItem" id="forComment"></p>
       </div>
         <form action="" id="modal__form">
           <div class="modalinput"> 

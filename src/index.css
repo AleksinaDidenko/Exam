@@ -183,12 +183,26 @@ footer .social .lastText p span {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
 }
 
-.formSection .form .form__inputs input {
+.formSection .form .form__inputs .form__input {
+  display: block;
+}
+
+.formSection .form .form__inputs .form__input input {
   width: 270px;
   padding: 5px;
+}
+
+.formSection .form .form__inputs .form__input .help {
+  display: block;
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.formSection .form .form__inputs .form__input .show {
+  visibility: visible;
 }
 
 .formSection .form #comment {

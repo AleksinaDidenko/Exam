@@ -33,7 +33,21 @@ $(document).ready(function() {
 
     //Проверка на правильное заполнение
 
-    //
+    function nameSymbolCounts() {
+      let $count = $name.length();
+
+      if ($count < 3) {
+        $(".name__input p")
+          .removeClass("help")
+          .addClass("show");
+      }
+    }
+
+    //вывод данных в модальное окно
+    $("#forName").text($name);
+    $("#forEmail").text($email);
+    $("#forWebsite").text($website);
+    $("#forComment").text($message);
 
     //Вызов модального окна
     $("div.modal__form")
