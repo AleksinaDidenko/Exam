@@ -34,6 +34,7 @@ $(document).ready(function() {
     //Проверка на правильное заполнение
 
     function nameSymbolCounts() {
+      
       let $count = $name.length();
 
       if ($count < 3) {
@@ -42,6 +43,8 @@ $(document).ready(function() {
           .addClass("show");
       }
     }
+
+    
 
     //вывод данных в модальное окно
     $("#forName").text($name);
