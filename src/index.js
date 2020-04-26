@@ -22,6 +22,21 @@ $(document).ready(function() {
   //3.Почта(проверить правильность написания)
   //4.При нажатии на кнопку - проверить все ли поля заполненны,если не все поля заполнены, то вернуться и подсветить не заполненное, если все заполненны, то открыть модальное окно(див, который был display:hide,стал display: flex), в котором будет написано, что ваше сообщение успешно отправленно(в течении 5 секунд перезагрузить страницу).
 
+  //Проверка на правильное заполнение
+
+  $("#name").on("change", function() {
+    let $count = $("#name")
+      .val()
+      .length();
+    let $minCount = 3;
+
+    if ($count < $minCount) {
+      $(".name__input p")
+        .removeClass("help")
+        .addClass("show");
+    }
+  });
+
   //Создаём функцию для обработки события "submit" в форме
 
   $("#commentForm").on("submit", function() {
@@ -30,21 +45,6 @@ $(document).ready(function() {
     let $email = $("#email").val();
     let $website = $("#website").val();
     let $message = $("#comment").val();
-
-    //Проверка на правильное заполнение
-
-    function nameSymbolCounts() {
-      
-      let $count = $name.length();
-
-      if ($count < 3) {
-        $(".name__input p")
-          .removeClass("help")
-          .addClass("show");
-      }
-    }
-
-    
 
     //вывод данных в модальное окно
     $("#forName").text($name);
