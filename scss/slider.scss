@@ -1,27 +1,78 @@
-.slides{
-    background: #000;
-    height: 90vh;
-    .slider{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-       .slider__item{
-           background: red;
-              
-           img{
-            width: 100%;
-            height: 90vh;
-               object-fit: cover;
-           }
-       }
-       .sliderNavBtn{
-           .slick-prev , .slick-next{
-            background: #000;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            z-index: 20;
-           }
-       }
+.slider {
+  width: 100%;
+  height: 90vh;
+  
+  .swiper-container {
+    height: 100%;
+    position: relative;
+    color: #fff;
+       
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .slider-text {
+        background: #000;
+        text-transform: uppercase;
+        font-size: 50px;
+      }
     }
+     
+    .slide-number-1 {
+        background: url("/img/home/slides_bg.png");
+        background-size: cover;
+      }
+      .slide-number-2 {
+        background: url("/img/home/slide-bg_2.png");
+        background-size: cover;
+      }
+      .slide-number-3 {
+        background: url("/img/home/slides_bg.png");
+        background-size: cover;
+      }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: absolute;
+      top: 48%;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      text-align: center;
+
+      &::after {
+        font-size: 25px;
+        color: #fff;
+        font-weight: lighter;
+      }
+
+      &:hover {
+        background: #000;
+        border: hidden;
+      }
+    }
+
+    .swiper-button-next {
+      left: 90%;
+    }
+    .swiper-button-prev {
+      left: 10%;
+    }
+
+    .swiper-pagination {
+      padding-bottom: 40px;
+
+      .swiper-pagination-bullet {
+        width: 13px;
+        height: 13px;
+        background: #fff;
+        margin: 0 6px;
+      }
+      .swiper-pagination-bullet-active {
+        border: 4px solid #000;
+      }
+    }
+  }
 }
