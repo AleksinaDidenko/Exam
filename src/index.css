@@ -156,12 +156,12 @@ footer .social .lastText p span {
 }
 
 .slider .swiper-container .slide-number-1 {
-  background: url("/img/home/slides_bg.png");
+  background: url("/img/home/slide-bg_2.png");
   background-size: cover;
 }
 
 .slider .swiper-container .slide-number-2 {
-  background: url("/img/home/slide-bg_2.png");
+  background: url("/img/home/slides_bg.png");
   background-size: cover;
 }
 
