@@ -19,6 +19,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./node_modules/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="./libs/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./src/index.css" />
   </head>
   <body>
@@ -41,18 +42,20 @@
     </header>
 
     <section class="slider">
-      
-       <!-- Swiper -->
-       <div class="swiper-container">
+      <!-- Swiper -->
+      <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide slide-number-1">
-            <div class="slider-text">bla-bla</div>
+            <div class="slider-text">
+              <h2>Lian Creative Agency</h2>
+              <p>Minimal Freelance Portfolio</p>
+            </div>
           </div>
           <div class="swiper-slide slide-number-2">
-            <div class="slider-text">bla-bla</div>
-          </div>
-          <div class="swiper-slide slide-number-3">
-            <div class="slider-text">bla-bla</div>
+            <div class="slider-text">
+              <h2>Design & Branding</h2>
+              <p>We Deliver Quality Results</p>
+            </div>
           </div>
         </div>
         <!-- Add Arrows -->
@@ -62,7 +65,35 @@
         <div class="swiper-pagination"></div>
       </div>
     </section>
-
+    <section class="home__content">
+      <div class="container">
+        <nav class="home__content_nav">
+          <ul>
+            <li><a href="">all</a></li>
+            <li><a href="">Logo</a></li>
+            <li><a href="">Mobile App</a></li>
+            <li><a href="">WordPress</a></li>
+            <li><a href="">Web design</a></li>
+            <li><a href="">ui/ix</a></li>
+            <li><a href="">branding</a></li>
+          </ul>
+        </nav>
+        <div class="pics">
+          <a data-fancybox="gallery" href="./img/home/item_img_1.png"
+            ><img src="./img/home/item_img_1.png"
+          /></a>
+          <a data-fancybox="gallery" href="./img/home/item_img_2.png"
+            ><img src="./img/home/item_img_2.png"
+          /></a>
+          <a data-fancybox="gallery" href="./img/home/item_img_9.png"
+            ><img src="./img/home/item_img_9.png"
+          /></a>
+          <a data-fancybox="gallery" href="./img/home/item_img_10.png"
+            ><img src="./img/home/item_img_10.png"
+          /></a>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="logo">
         <img src="./img/home/logo.png" alt="logo" />
@@ -84,6 +115,7 @@
     </footer>
     <script src="./libs/jquery-3.5.0.min.js"></script>
     <script src="./node_modules/swiper/js/swiper.min.js"></script>
+    <script src="./libs/jquery.fancybox.min.js"></script>
     <script src="./src/index.js"></script>
   </body>
 </html>
