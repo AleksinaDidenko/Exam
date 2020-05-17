@@ -1,14 +1,9 @@
 .pics {
-  display: flex;
-  .pics__column {
-    width: 360px;
-    height: 1880px;
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
+    column-count: 3;
+    column-gap: 2em;
     .pic {
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       max-width: 360px;
       overflow: hidden;
       img {
@@ -18,8 +13,10 @@
         object-position: center;
       }
     }
-  }
+
 }
+
+
 .pic_240 {
   height: 240px;
 }
