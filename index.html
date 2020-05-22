@@ -24,28 +24,29 @@
   </head>
   <body>
     <header>
+      <div class="logo">
+        <a href="./index.html"><img src="./img/home/logo.png" alt="logo" /></a>
+      </div>
       <nav class="header__nav">
-        <div class="logo">
-          <img src="./img/home/logo.png" alt="logo" />
-        </div>
-        <div class="burger">
-          <div class="line__wrap">
-            <div class="line"></div>
-          </div>
-        </div>
-        <ul>
+                
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+        </div> 
+        <ul class="menu__box">
           <li><a href="./index.html">home</a></li>
           <li><a href="./portfolio.html">portfolio</a></li>
           <li><a href="./about.html">about</a></li>
           <li><a href="./blog.html">blog</a></li>
           <li><a href="./contact.html">contact</a></li>
-          
-          <li>
-            <label  for="search"></label>
-            <i class="fa fa-search" aria-hidden="true" id="search"></i>
-          </li>
         </ul>
       </nav>
+      <div class="search">
+        <label  for="search"></label>
+        <i class="fa fa-search" aria-hidden="true" id="search"></i>
+      </div>
     </header>
 
     <section class="slider">

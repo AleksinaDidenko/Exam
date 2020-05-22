@@ -1,21 +1,47 @@
 header {
   background: #fff;
-  padding: 10px 120px 5px 120px;
-  // @media screen and (max-width: 720px){
-  //   header{
-  //     padding: 10px 20px 5px 20px;
-  //   }
-  // }
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 120px 15px 120px;
+
   .header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .burger{
-      width: 30px;
-      height: 30px;
-      border: 1px solid red;
+    /* скрываем чекбокс */
+    #menu__toggle {
+      opacity: 0;
     }
-    ul {
+    /* стилизуем кнопку */
+    .menu__btn {
+      display: flex; /* используем flex для центрирования содержимого */
+      align-items: center; /* центрируем содержимое кнопки */
+      transform: translate(0, -5px);
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 1;
+    }
+    /* добавляем "гамбургер" */
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #616161;
+    }
+    .menu__btn > span::before {
+      content: "";
+      top: -8px;
+    }
+    .menu__btn > span::after {
+      content: "";
+      top: 8px;
+    }
+
+    .menu__box {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -53,7 +79,14 @@ header {
             }
           }
         }
-        label{
+
+        .active {
+          display: inline-block;
+        }
+      }
+      .search {
+        display: flex;
+        label {
           margin: 0 15px 0 0;
           transform: translate(0, 5px);
           width: 150px;
@@ -61,16 +94,17 @@ header {
           border: 1px solid #e1e1e1;
           border-radius: 2px;
           display: none;
-         
-        }
-        .active{
-          transition: 0.2s;
-          display: inline-block;
         }
       }
     }
   }
 }
+
+// @media screen and (max-width: 720px) {
+//   header {
+//     padding: 5px 30px 5px 30px;
+//   }
+// }
 
 footer {
   text-align: center;
