@@ -124,7 +124,6 @@ header .container .hamburger-menu {
   position: absolute;
   top: 0;
   left: 30%;
-  border: 1px solid red;
   width: 30px;
   height: 30px;
   display: -webkit-box;
@@ -155,29 +154,49 @@ header .container .hamburger-menu .menu__btn span {
   width: 85%;
   height: 2px;
   background: #000;
+  transition: 0.3s;
 }
 
 header .container .hamburger-menu .menu__btn::before {
-  content: "";
-  top: 6px;
-  position: absolute;
-  width: 85%;
-  height: 2px;
-  background: #000;
-}
-
-header .container .hamburger-menu .menu__btn::after {
   content: "";
   bottom: 6px;
   position: absolute;
   width: 85%;
   height: 2px;
   background: #000;
+  transition: 0.3s;
+}
+
+header .container .hamburger-menu .menu__btn::after {
+  content: "";
+  top: 6px;
+  position: absolute;
+  width: 85%;
+  height: 2px;
+  background: #000;
+  transition: 0.3s;
+}
+
+header .container .hamburger-menu .lock span {
+  display: none;
+}
+
+header .container .hamburger-menu .lock::before {
+  transform: rotate(45deg);
+  bottom: 17px;
+}
+
+header .container .hamburger-menu .lock::after {
+  transform: rotate(-45deg);
+  top: 11px;
 }
 
 @media screen and (max-width: 750px) {
   header .container .hamburger-menu {
     opacity: 1;
+  }
+  header .container .block_menu {
+    display: block;
   }
 }
 
@@ -236,6 +255,35 @@ header .container .header__nav .menu__box li a:hover::after {
 @media screen and (max-width: 750px) {
   header .container .header__nav {
     display: none;
+  }
+}
+
+header .container form {
+  margin-left: 40px;
+}
+
+header .container form input {
+  display: none;
+  margin-right: 10px;
+  border: 2px solid rgba(175, 172, 172, 0.103);
+}
+
+header .container form button {
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: none;
+}
+
+header .container form .active {
+  display: inline-block;
+}
+
+@media screen and (max-width: 750px) {
+  header .container {
+    max-width: 500px;
+    width: 100%;
+    justify-content: center;
   }
 }
 

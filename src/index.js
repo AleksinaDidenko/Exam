@@ -12,10 +12,19 @@ $(document).ready(function() {
     mousewheel: true,
     keyboard: true,
   });
- 
-  //search at home.html
- 
 
-   
+  //search at home.html
+
+  $("#search").on("click", function(event) {
+    event.preventDefault();
+    $("#search_input").toggleClass("active");
+  });
+
+  //hamburger
+  $(".hamburger-menu").on("click", function(event) {
+    event.preventDefault();
+    $(".menu__btn").toggleClass("lock");
+    $('.header__nav').toggleClass('block_menu');
+  });
 
 });
