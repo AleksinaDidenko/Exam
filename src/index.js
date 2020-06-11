@@ -14,9 +14,7 @@ $(document).ready(function() {
   });
  
   //search at home.html
-  $('#search').on('click', function(){
-       $('.header__nav label').toggleClass("active")
-   })
+ 
 
    
 
