@@ -195,9 +195,6 @@ header .container .hamburger-menu .lock::after {
   header .container .hamburger-menu {
     opacity: 1;
   }
-  header .container .block_menu {
-    display: block;
-  }
 }
 
 header .container .header__nav {
@@ -252,31 +249,31 @@ header .container .header__nav .menu__box li a:hover::after {
   opacity: 1;
 }
 
-@media screen and (max-width: 750px) {
-  header .container .header__nav {
-    display: none;
-  }
-}
-
-header .container form {
+header .container .header__nav form {
   margin-left: 40px;
 }
 
-header .container form input {
+header .container .header__nav form input {
   display: none;
   margin-right: 10px;
   border: 2px solid rgba(175, 172, 172, 0.103);
 }
 
-header .container form button {
+header .container .header__nav form button {
   width: 25px;
   height: 25px;
   background: transparent;
   border: none;
 }
 
-header .container form .active {
-  display: inline-block;
+header .container .header__nav form .active {
+  display: inline;
+}
+
+@media screen and (max-width: 750px) {
+  header .container .block_menu {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -284,12 +281,33 @@ header .container form .active {
     max-width: 500px;
     width: 100%;
     justify-content: center;
+    position: relative;
+    height: 200px;
+  }
+  header .container .header__nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid red;
+    width: 90px;
+    background: #000;
+  }
+  header .container .header__nav .menu__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header .container .header__nav .menu__box li:not(:last-child) {
+    margin-right: 0;
   }
 }
 
 .slider {
   width: 100%;
   height: 100vh;
+  margin-top: 100px;
 }
 
 .slider .swiper-container {
