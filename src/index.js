@@ -17,14 +17,15 @@ $(document).ready(function() {
 
   $("#search").on("click", function(event) {
     event.preventDefault();
-    $("#search_input").toggleClass("active");
+      $("#search_input").fadeToggle(1000);
   });
 
-  //hamburger
-  $(".hamburger-menu").on("click", function(event) {
+  // //hamburger
+  $(".header__burger").on("click", function(event) {
     event.preventDefault();
-    $(".menu__btn").toggleClass("lock");
-    $('.header__nav').toggleClass('block_menu');
+    $(".header__burger").toggleClass("active");
+    $(".header__burger span").toggleClass("active");
+    $('.header__list li a').toggleClass("active");
+    $(".header__menu").slideToggle();
   });
-
 });

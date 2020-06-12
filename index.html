@@ -24,63 +24,70 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <div class="logo">
-          <img src="./img/home/logo.png" alt="logo" />
+    <div class="header_and_slider_wraper">
+      <header>
+        <div class="container">
+          <div class="header__body">
+            <div class="logo">
+              <img src="./img/home/logo.png" alt="logo" />
+            </div>
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./portfolio.html">portfolio</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./blog.html">blog</a></li>
+                <li><a href="./contact.html">contact</a></li>
+                <li>
+                  <form>
+                    <input
+                      type="text"
+                      id="search_input"
+                      placeholder="Искать здесь..."
+                    />
+                    <button type="submit" id="search">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </form>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" />
-          <label class="menu__btn" for="menu__toggle">
-            <span></span>
-          </label>
-        </div>
-        <nav class="header__nav">
-          <ul class="menu__box">
-            <li><a href="./index.html">home</a></li>
-            <li><a href="./portfolio.html">portfolio</a></li>
-            <li><a href="./about.html">about</a></li>
-            <li><a href="./blog.html">blog</a></li>
-            <li><a href="./contact.html">contact</a></li>
-          </ul>
-          <form>
-            <input
-              type="text"
-              id="search_input"
-              placeholder="Искать здесь..."
-            />
-            <button type="submit" id="search">
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
-          </form>
-        </nav>
-      </div>
-    </header>
+        <!-- <div class="wraper__block">
+          <p>Lorem ipsum dolor sit amet consectetur </p>
+        </div> -->
+      </header>
 
-    <section class="slider">
-      <!-- Swiper -->
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide slide-number-1">
-            <div class="slider-text">
-              <h2>Lian Creative Agency</h2>
-              <p>Minimal Freelance Portfolio</p>
+      <div class="slider">
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-number-1">
+              <div class="slider-text">
+                <h2>Lian Creative Agency</h2>
+                <p>Minimal Freelance Portfolio</p>
+              </div>
+            </div>
+            <div class="swiper-slide slide-number-2">
+              <div class="slider-text">
+                <h2>Design & Branding</h2>
+                <p>We Deliver Quality Results</p>
+              </div>
             </div>
           </div>
-          <div class="swiper-slide slide-number-2">
-            <div class="slider-text">
-              <h2>Design & Branding</h2>
-              <p>We Deliver Quality Results</p>
-            </div>
-          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </div>
+
     <section class="home__content">
       <div class="container">
         <nav class="home__content_nav">
