@@ -55,16 +55,6 @@ footer {
   margin: 50px 0 20px 0;
 }
 
-footer .logo {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-footer .logo img {
-  padding-bottom: 30px;
-}
-
 footer .social {
   justify-content: space-between;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -288,12 +278,12 @@ header::before {
 }
 
 .slider .swiper-container .slide-number-1 {
-  background: url("/img/home/slides_bg.png");
+  background: url("../img/home/slides_bg.png");
   background-size: cover;
 }
 
 .slider .swiper-container .slide-number-2 {
-  background: url("/img/home/slide-bg_2.png");
+  background: url("../img/home/slide-bg_2.png");
   background-size: cover;
 }
 
